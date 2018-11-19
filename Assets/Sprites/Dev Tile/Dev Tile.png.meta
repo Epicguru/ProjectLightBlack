@@ -1,7 +1,67 @@
 fileFormatVersion: 2
 guid: cb831d1be87c0d84298540afbf02f9f8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8870397968604507320
+    second: Top Left
+  - first:
+      213: -1942740085971693487
+    second: Top Right
+  - first:
+      213: -3451339005619382911
+    second: Left Edge
+  - first:
+      213: -817396858348822163
+    second: Bottom Left
+  - first:
+      213: 1071927224804597663
+    second: Bottom Right
+  - first:
+      213: -4416671309420370453
+    second: Bottom
+  - first:
+      213: -8979658097689788454
+    second: Right
+  - first:
+      213: -1212249321366415531
+    second: Top
+  - first:
+      213: 740662179015539200
+    second: Full
+  - first:
+      213: -2709176449067850262
+    second: Dev Tile_0
+  - first:
+      213: 1090931772569510194
+    second: Dev Tile_Test
+  - first:
+      213: 8741562789518843969
+    second: Dev Tile_Bottom Left
+  - first:
+      213: 5235728462374267139
+    second: Dev Tile_Left
+  - first:
+      213: -8175442418730538394
+    second: Dev Tile_Bottom_Left
+  - first:
+      213: 6630271804907996538
+    second: Dev Tile_Top_Left
+  - first:
+      213: -5270013766190331895
+    second: Dev Tile_Bottom_Right
+  - first:
+      213: 5023714902453989837
+    second: Dev Tile_Right
+  - first:
+      213: -8840244746433755486
+    second: Dev Tile_Top_Right
+  - first:
+      213: 7694454624402949494
+    second: Dev Tile_Bottom
+  - first:
+      213: -6795165536311069176
+    second: Dev Tile_Top
   externalObjects: {}
   serializedVersion: 8
   mipmaps:
@@ -40,14 +100,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
-  spriteExtrude: 1
+  spriteMode: 2
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -63,7 +123,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -74,7 +134,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,7 +142,196 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Dev Tile_Bottom_Left
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ad1ebc0fbc9824dad0b619b5ed8b43
+      internalID: -8175442418730538394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dev Tile_Left
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 5
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508694ba44d67354c8d9f9878c06f9a5
+      internalID: 5235728462374267139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dev Tile_Top_Left
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c157e4f8822fa47b13c6e989aeb555
+      internalID: 6630271804907996538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dev Tile_Bottom_Right
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5061804862991e6439a40747420a84df
+      internalID: -5270013766190331895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dev Tile_Right
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 5
+        width: 5
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158a0ee5dbbc6954e8bac79239ede7b0
+      internalID: 5023714902453989837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dev Tile_Top_Right
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 27
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5770ac5b24d2444a4e8cc9409f5d09
+      internalID: -8840244746433755486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dev Tile_Bottom
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 22
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520943610947c80489eff04ba8579c0e
+      internalID: 7694454624402949494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dev Tile_Top
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 27
+        width: 22
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ed6df57f00d4e4aa7178b5888a56b9
+      internalID: -6795165536311069176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289d08b78b3a9e04994bcc9a7cb81b9d
+      internalID: 740662179015539200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -95,6 +344,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 592552786
   assetBundleName: 
   assetBundleVariant: 
