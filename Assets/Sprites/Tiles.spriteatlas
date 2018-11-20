@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tiles
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 4
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 22b292d214329124897d5b4ef79e13a1, type: 3}
+    totalSpriteSurfaceArea: 1564
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 6434912615561674187, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: -9201347504828744124, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 2384590612353509740, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: -682400143577139201, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: -801137815211097035, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: -2159768131151346063, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 8547274097550920225, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 8754645030478024546, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 8210519884332734118, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - DevTile_Full
+  - DevTile_Top_Right
+  - DevTile_Top_Left
+  - DevTile_Bottom
+  - DevTile_Right
+  - DevTile_Top
+  - DevTile_Left
+  - DevTile_Bottom_Left
+  - DevTile_Bottom_Right
+  m_Tag: Tiles
+  m_IsVariant: 0

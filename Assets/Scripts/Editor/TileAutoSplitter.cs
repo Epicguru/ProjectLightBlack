@@ -74,7 +74,7 @@ public class TileAutoSplitter : MonoBehaviour
         metas.Add(CreateRegion(EDGE, EDGE + INNER, INNER, EDGE, baseName + "Top"));
 
         // Full
-        metas.Add(CreateRegion(FULL, 0, FULL, FULL, "Full"));
+        metas.Add(CreateRegion(FULL, 0, FULL, FULL, baseName + "Full"));
 
         importer.spritesheet = metas.ToArray();
         AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);
