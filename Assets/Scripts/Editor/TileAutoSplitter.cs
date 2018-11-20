@@ -55,26 +55,25 @@ public class TileAutoSplitter : MonoBehaviour
 
         const int FULL = 32;
         const int EDGE = 5;
-        const int INNER = FULL - EDGE * 2;
 
         // Left
         metas.Add(CreateRegion(0, 0, EDGE, EDGE, baseName + "Bottom_Left"));
-        metas.Add(CreateRegion(0, EDGE, EDGE, INNER, baseName + "Left"));
-        metas.Add(CreateRegion(0, EDGE + INNER, EDGE, EDGE, baseName + "Top_Left"));
+        metas.Add(CreateRegion(0, EDGE, EDGE, FULL, baseName + "Left"));
+        metas.Add(CreateRegion(0, EDGE + FULL, EDGE, EDGE, baseName + "Top_Left"));
 
         // Right
-        metas.Add(CreateRegion(EDGE + INNER, 0, EDGE, EDGE, baseName + "Bottom_Right"));
-        metas.Add(CreateRegion(EDGE + INNER, EDGE, EDGE, INNER, baseName + "Right"));
-        metas.Add(CreateRegion(EDGE + INNER, EDGE + INNER, EDGE, EDGE, baseName + "Top_Right"));
+        metas.Add(CreateRegion(EDGE + FULL, 0, EDGE, EDGE, baseName + "Bottom_Right"));
+        metas.Add(CreateRegion(EDGE + FULL, EDGE, EDGE, FULL, baseName + "Right"));
+        metas.Add(CreateRegion(EDGE + FULL, EDGE + FULL, EDGE, EDGE, baseName + "Top_Right"));
 
         // Bottom
-        metas.Add(CreateRegion(EDGE, 0, INNER, EDGE, baseName + "Bottom"));
+        metas.Add(CreateRegion(EDGE, 0, FULL, EDGE, baseName + "Bottom"));
 
         // Top
-        metas.Add(CreateRegion(EDGE, EDGE + INNER, INNER, EDGE, baseName + "Top"));
+        metas.Add(CreateRegion(EDGE, EDGE + FULL, FULL, EDGE, baseName + "Top"));
 
         // Full
-        metas.Add(CreateRegion(FULL, 0, FULL, FULL, baseName + "Full"));
+        metas.Add(CreateRegion(EDGE, EDGE, FULL, FULL, baseName + "Full"));
 
         importer.spritesheet = metas.ToArray();
         AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);

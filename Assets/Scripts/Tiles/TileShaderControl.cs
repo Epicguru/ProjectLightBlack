@@ -21,8 +21,6 @@ public class TileShaderControl : MonoBehaviour
     }
     public Sprite[] Parts = new Sprite[9];
 
-    [SerializeField]
-    [ReadOnly]
     private Vector4[] Regions = new Vector4[18];
     private int regionsID;
     private int textureID;
@@ -86,7 +84,7 @@ public class TileShaderControl : MonoBehaviour
             UpdateRegion(i, region);
         }
 
-        if (true)
+        if (dirty)
         {
             Material.SetTexture(textureID, cachedTex);
             Material.SetVectorArray(regionsID, Regions);
