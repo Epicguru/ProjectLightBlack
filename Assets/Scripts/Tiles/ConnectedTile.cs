@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
+[RequireComponent(typeof(TileShaderControl))]
 public class ConnectedTile : Tile
 {
     private static Dictionary<string, byte> indices = new Dictionary<string, byte>();

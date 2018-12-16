@@ -4,7 +4,6 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.U2D;
 
-[RequireComponent(typeof(TileShaderControl))]
 public abstract class Tile : MonoBehaviour
 {
     public static Dictionary<string, Sprite> loadedTextures = new Dictionary<string, Sprite>();
