@@ -2,6 +2,8 @@
 
 public class TileShaderControl : MonoBehaviour
 {
+    // TODO: Remove all update loops from tile monobehaviours.
+
     public MeshRenderer MeshRenderer
     {
         get
@@ -19,76 +21,62 @@ public class TileShaderControl : MonoBehaviour
             return MeshRenderer.material;
         }
     }
-    public Sprite[] Parts = new Sprite[9];
 
     private Vector4[] Regions = new Vector4[18];
-    private int regionsID;
-    private int textureID;
-    private bool dirty = false;
+    private static int regionsID = Shader.PropertyToID("_Regions");
+    private static int textureID = Shader.PropertyToID("_MainTex");
     private Texture cachedTex;
     const int SIZE = 32;
     const float EDGE = 5;
     const float EDGE_SIZE = EDGE / SIZE;
     private static Vector4[] positions = new Vector4[9]
     {
-        new Vector4(0, 0, 1, 1),
-        new Vector4(0, 0, EDGE_SIZE, 1),
-        new Vector4(0, 1 - EDGE_SIZE, 1, EDGE_SIZE),
-        new Vector4(1 - EDGE_SIZE, 0, EDGE_SIZE, 1),
-        new Vector4(0, 0, 1, EDGE_SIZE),
-        new Vector4(0, 0, EDGE_SIZE, EDGE_SIZE),
-        new Vector4(0, 1 - EDGE_SIZE, EDGE_SIZE, EDGE_SIZE),
-        new Vector4(1 - EDGE_SIZE, 1 - EDGE_SIZE, EDGE_SIZE, EDGE_SIZE),
-        new Vector4(1 - EDGE_SIZE, 0, EDGE_SIZE, EDGE_SIZE)
+        new Vector4(0, 0, 1, 1), // Center
+        new Vector4(0, 0, EDGE_SIZE, 1), // Left Edge
+        new Vector4(0, 1 - EDGE_SIZE, 1, EDGE_SIZE), // Top Edge
+        new Vector4(1 - EDGE_SIZE, 0, EDGE_SIZE, 1), // Right Edge
+        new Vector4(0, 0, 1, EDGE_SIZE), // Bottom Edge
+        new Vector4(0, 0, EDGE_SIZE, EDGE_SIZE), // Bottom Left Corner
+        new Vector4(0, 1 - EDGE_SIZE, EDGE_SIZE, EDGE_SIZE), // Top Left Corner
+        new Vector4(1 - EDGE_SIZE, 1 - EDGE_SIZE, EDGE_SIZE, EDGE_SIZE), // Top Right Corner
+        new Vector4(1 - EDGE_SIZE, 0, EDGE_SIZE, EDGE_SIZE) // Bottom Right Corner
     };
 
-    private void Start()
+    public void Init()
     {
-        // Find property ID's.
-        regionsID = Shader.PropertyToID("_Regions");
-        textureID = Shader.PropertyToID("_MainTex");
-
         for (byte i = 0; i < 9; i++)
         {
-            UpdateRegion(i, new Vector4(-1, -1, -1, -1));
+            UpdateRegion(i, null);
         }
+        Apply();
     }
 
-    private void LateUpdate()
+    public bool UpdateRegion(byte index, Sprite sprite)
     {
-        for (byte i = 0; i < 9; i++)
+        if(sprite == null)
         {
-            if (Parts.Length == i)
-                break;
-
-            var spr = Parts[i];
-            if (spr == null)
-                continue;
-            var rect = spr.textureRect;
-
+            return UpdateRegion(index, new Vector4(-1, -1, -1, -1));
+        }
+        else
+        {
+            Rect rect = sprite.textureRect;
+            Texture t = sprite.texture;
             Vector4 region = new Vector4();
-            region.x = rect.x / spr.texture.width;
-            region.y = rect.y / spr.texture.height;
-            region.z = rect.width / spr.texture.width;
-            region.w = rect.height / spr.texture.height;
+            region.x = rect.x / t.width;
+            region.y = rect.y / t.height;
+            region.z = rect.width / t.width;
+            region.w = rect.height / t.height;
 
-            if(cachedTex == null)
+            if (cachedTex == null)
             {
-                cachedTex = spr.texture;
+                cachedTex = sprite.texture;
             }
-            else if(cachedTex != spr.texture)
+            else if (cachedTex != sprite.texture)
             {
                 Debug.LogError("Tried to use a sprite that was not packed next to previous sprites! This is not supported. Expect wierd results.");
             }
 
-            UpdateRegion(i, region);
-        }
-
-        if (dirty)
-        {
-            Material.SetTexture(textureID, cachedTex);
-            Material.SetVectorArray(regionsID, Regions);
-            dirty = false;
+            return UpdateRegion(index, region);
         }
     }
 
@@ -117,7 +105,12 @@ public class TileShaderControl : MonoBehaviour
 
         Regions[index * 2] = region;
         Regions[index * 2 + 1] = position;
-        dirty = true;
         return true;
+    }
+
+    public void Apply()
+    {
+        Material.SetTexture(textureID, cachedTex);
+        Material.SetVectorArray(regionsID, Regions);
     }
 }

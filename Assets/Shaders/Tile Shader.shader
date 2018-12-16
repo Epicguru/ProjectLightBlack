@@ -78,7 +78,7 @@
 									float ay = region.y + region.w * ((currentUV.y - pos.y) / h);
 									float2 adjustedUV = float2(ax, ay);
 									fixed4 read = tex2D(_MainTex, adjustedUV);
-									col = lerp(col, read, read.a);
+									col = read;
 								}
 							}
 						}
