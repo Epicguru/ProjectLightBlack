@@ -25,6 +25,6 @@ public class ThrusterFlameController : MonoBehaviour
         ls.x = scale;
         transform.localScale = ls;
 
-        Renderer.material.mainTextureOffset = new Vector2(0, timer * 20f);
+        Renderer.material.mainTextureOffset = new Vector2(Mathf.Cos(timer * Mathf.PI * 2f * 10f) * 0.05f, Mathf.Sin(timer * Mathf.PI * 2f * 6f) * 2f);
     }
 }
