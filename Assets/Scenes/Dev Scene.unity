@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -387,6 +388,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraZoomBounds: {x: 1.5, y: 60}
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 830515db300c40e4292d80bf8e66d787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 485869214744048909}
 --- !u!1 &1004028579
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,10 +495,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e2d8bfe52494741aef09aa3f2a9f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Events: {fileID: 0}
+  Events: {fileID: 1908671217}
   Bindings:
   - Name: Select
     Keys: 43010000
+  - Name: Camera Pan
+    Keys: 3401000045010000
 --- !u!1 &1743723680
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,8 +885,35 @@ PrefabInstance:
         type: 3}
       propertyPath: Prefab
       value: 
-      objectReference: {fileID: 5069957609032699401, guid: f9d18a768ef2d514fa0abdee3f4e0722,
+      objectReference: {fileID: 0}
+    - target: {fileID: 485869215288218499, guid: 98769450ccd815242ac8894eca77b506,
         type: 3}
+      propertyPath: Width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 485869215288218499, guid: 98769450ccd815242ac8894eca77b506,
+        type: 3}
+      propertyPath: Height
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035387933409774700, guid: 98769450ccd815242ac8894eca77b506,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485869215288218524, guid: 98769450ccd815242ac8894eca77b506, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98769450ccd815242ac8894eca77b506, type: 3}
+--- !u!114 &485869214744048909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 485869215288218499, guid: 98769450ccd815242ac8894eca77b506,
+    type: 3}
+  m_PrefabInstance: {fileID: 485869214744048908}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fc360a45a7c7f3440bc40a281bd8046b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

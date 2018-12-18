@@ -23,6 +23,9 @@ public class InputManagerGameObject : MonoBehaviour
     public void Awake()
     {
         Bindings = null;
+
+        // TODO REMOVEME - temporary loading.
+        Tile.LoadAllTiles();
     }
 
     public void Update()

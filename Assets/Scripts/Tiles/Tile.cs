@@ -6,7 +6,12 @@ using UnityEngine.U2D;
 
 public abstract class Tile : MonoBehaviour
 {
+    private static Dictionary<byte, Tile> loadedTiles = new Dictionary<byte, Tile>();
     public static Dictionary<string, Sprite> loadedTextures = new Dictionary<string, Sprite>();
+
+    [Header("Info")]
+    public byte ID;
+    public string Name = "Tile Name";
 
     public Ship Ship { get; set; }
     public int X { get; set; }
@@ -54,7 +59,7 @@ public abstract class Tile : MonoBehaviour
         }
         else
         {
-            string resPath = "Tiles/" + baseName + '/' + baseName;
+            string resPath = "Tile Sprites/" + baseName + '/' + baseName;
             Sprite[] spr = Resources.LoadAll<Sprite>(resPath);
 
             if (loadedTextures.ContainsKey(spr[0].name))
@@ -72,10 +77,47 @@ public abstract class Tile : MonoBehaviour
                     target = item;
 
                 loadedTextures.Add(item.name, item);
-                Debug.Log(item.name);
             }
 
             return target;
         }
+    }
+
+    public static void LoadAllTiles()
+    {
+        loadedTiles.Clear();
+        var fromDisk = Resources.LoadAll<Tile>("Tiles");
+
+        foreach (var item in fromDisk)
+        {
+            byte id = item.ID;
+            if (loadedTiles.ContainsKey(id))
+            {
+                Debug.LogWarning("A tile has a duplicate ID: {0}. It will not be loaded.".Form(id));
+            }
+            else
+            {
+                loadedTiles.Add(id, item);
+                Debug.Log("Loaded '{0}' [{1}]".Form(item.Name, id));
+            }
+        }
+    }
+
+    public static Tile GetTile(byte id)
+    {
+        if (loadedTiles.ContainsKey(id))
+        {
+            return loadedTiles[id];
+        }
+        else
+        {
+            Debug.LogWarning("The tile for ID {0} is not loaded. ({1} tiles loaded)".Form(id, loadedTiles.Count));
+            return null;
+        }
+    }
+
+    public static void UnloadAllTiles()
+    {
+        loadedTiles.Clear();
     }
 }

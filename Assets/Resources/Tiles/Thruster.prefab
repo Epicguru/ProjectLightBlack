@@ -244,7 +244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 823d2048151267f4d82db0b848dd2658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Orientation: 1
+  ID: 2
+  Name: Thruster
+  Orientation: 3
 --- !u!212 &1692289143683002444
 SpriteRenderer:
   m_ObjectHideFlags: 0
