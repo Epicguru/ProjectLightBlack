@@ -13,19 +13,22 @@ public abstract class Tile : MonoBehaviour
     public byte ID;
     public string Name = "Tile Name";
 
+    public TileData Data = new TileData();
+
     public Ship Ship { get; set; }
     public int X { get; set; }
     public int Y { get; set; }
 
     /// <summary>
     /// Called when a tile adjacent (including diagonals) to this tile is removed or placed, or a visual change that requires surroundings to adapt occures.
+    /// By default calls RefreshTexture()
     /// </summary>
     /// <param name="changeX">The X position of the tile that changed.</param>
     /// <param name="changeY">The Y position of the tile that changed.</param>
     /// <param name="changedTile">The newly placed/updated tile, or null if the tile was removed.</param>
     public virtual void SurroundingsUpdated(int changeX, int changeY, Tile changedTile)
     {
-
+        RefreshTexture();
     }
 
     public abstract void RefreshTexture();    
