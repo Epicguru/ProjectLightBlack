@@ -2,7 +2,16 @@
 
 public class TileShaderControl : MonoBehaviour
 {
-    // TODO: Remove all update loops from tile monobehaviours.
+    public Tile Tile
+    {
+        get
+        {
+            if (_tile == null)
+                _tile = GetComponent<Tile>();
+            return _tile;
+        }
+    }
+    private Tile _tile;
 
     public MeshRenderer MeshRenderer
     {
@@ -25,6 +34,8 @@ public class TileShaderControl : MonoBehaviour
     private Vector4[] Regions = new Vector4[18];
     private static int regionsID = Shader.PropertyToID("_Regions");
     private static int textureID = Shader.PropertyToID("_MainTex");
+    private static int fillerID = Shader.PropertyToID("_FillerTex");
+    private static int offsetID = Shader.PropertyToID("_Offset");
     private Texture cachedTex;
     const int SIZE = 32;
     const float EDGE = 5;
@@ -108,9 +119,15 @@ public class TileShaderControl : MonoBehaviour
         return true;
     }
 
+    public void UpdateFiller(Texture filler)
+    {
+        Material.SetTexture(fillerID, filler);
+    }
+
     public void Apply()
     {
         Material.SetTexture(textureID, cachedTex);
         Material.SetVectorArray(regionsID, Regions);
+        Material.SetVector(offsetID, new Vector2(Tile.X, Tile.Y));
     }
 }

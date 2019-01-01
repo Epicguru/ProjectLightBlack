@@ -41,7 +41,10 @@
             }
 
             sampler2D _MainTex;
+            sampler2D _FillerTex;
 			float4 _Regions[18]; // A vector4 for the texture region, another for the position within the tile.
+			float4 _Filler; // The filler bounds.
+			float2 _Offset; // Basically the position of the tile, used for scrolling the filler texture. It's a float4 but only x and y are used.
 
             fixed4 frag (v2f i) : SV_Target
             {
@@ -78,7 +81,16 @@
 									float ay = region.y + region.w * ((currentUV.y - pos.y) / h);
 									float2 adjustedUV = float2(ax, ay);
 									fixed4 read = tex2D(_MainTex, adjustedUV);
-									col = read;
+
+									if(read.r == 1.0 && read.g == 0.0 && read.b == 1.0 && read.a == 1.0)
+									{
+										col = tex2D(_FillerTex, (currentUV + _Offset) * 0.25);
+									}
+									else
+									{
+										col = read;
+									}
+
 								}
 							}
 						}

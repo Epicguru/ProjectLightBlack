@@ -50,6 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 0
   Name: Dev. Tile
+  Filler: {fileID: 2800000, guid: 06a4309b1cde13947a8c92ac828d7f9e, type: 3}
+  _slanted: 0
   SpriteName: DevTile
 --- !u!114 &3966723072071870522
 MonoBehaviour:

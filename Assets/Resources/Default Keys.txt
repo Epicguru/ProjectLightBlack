@@ -5,5 +5,8 @@
   "Camera Pan": [
     308,
     325
+  ],
+  "Alternative Tool Use": [
+    304
   ]
 }

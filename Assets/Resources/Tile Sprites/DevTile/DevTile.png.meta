@@ -104,6 +104,30 @@ TextureImporter:
   - first:
       213: -5034208326802258431
     second: DevTile_Top_Left_I
+  - first:
+      213: 7075794041156255056
+    second: DevTile_Corner_Top_Left
+  - first:
+      213: 2337857992915618026
+    second: DevTile_Corner_Top_Right
+  - first:
+      213: 5549301148945511166
+    second: DevTile_Corner_Bottom_Left
+  - first:
+      213: 6009799177912193250
+    second: DevTile_Corner_Bottom_Right
+  - first:
+      213: 9163338200087120010
+    second: DevTile_Top_Left_IC
+  - first:
+      213: 7577328447866056149
+    second: DevTile_Top_Right_IC
+  - first:
+      213: -8902986911627330079
+    second: DevTile_Bottom_Left_IC
+  - first:
+      213: -2644271210424804987
+    second: DevTile_Bottom_Right_IC
   externalObjects: {}
   serializedVersion: 8
   mipmaps:
@@ -200,7 +224,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28b5afb9802d945468a6a20b3a92dba0
+      spriteID: 92d3055a248a26947b40f4ab5862e9cf
       internalID: 8754645030478024546
       vertices: []
       indices: 
@@ -221,7 +245,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e91e2c5bb6baa674aa74b7d710b69ce0
+      spriteID: cea52384a5583794bb7b2b3663b0bf25
       internalID: 8547274097550920225
       vertices: []
       indices: 
@@ -242,7 +266,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c93294bdeb624f44ca268fb683dd5ed8
+      spriteID: 2a4988dcacbf84c4b9d313372fb4d226
       internalID: 2384590612353509740
       vertices: []
       indices: 
@@ -263,7 +287,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a5fd631cc204fd4584f89a8e2582b33
+      spriteID: 618b60166df551e4f9c76403e4eca910
       internalID: 8210519884332734118
       vertices: []
       indices: 
@@ -284,7 +308,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a6416b14b1a34c49a11307fc0bfbbb9
+      spriteID: 0f00bb7630c51604795a952d4bdc2e7c
       internalID: -801137815211097035
       vertices: []
       indices: 
@@ -305,7 +329,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdddc0d237a24dc47b3dfcc5a5555ba4
+      spriteID: 7489b3bb364c28949af12c625e1dd401
       internalID: -9201347504828744124
       vertices: []
       indices: 
@@ -326,7 +350,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93e3b6feaa58a2e4fbd1f490ea81819e
+      spriteID: 8723b76a1a64f4442baf74634c602952
       internalID: -682400143577139201
       vertices: []
       indices: 
@@ -347,7 +371,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f3c3eff5dc96084da6ba9be9f233fef
+      spriteID: d2cb6e4bed8f0ef418c9bbdaf9695aa3
       internalID: -2159768131151346063
       vertices: []
       indices: 
@@ -368,7 +392,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4a43568f9e135c49b4196bd4247d0aa
+      spriteID: dcaf7b115efd56544b20a85db60dbd5f
       internalID: 6434912615561674187
       vertices: []
       indices: 
@@ -389,7 +413,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d32bbd12b4b2b54bb1c9667afbf3c6d
+      spriteID: 3c422227b7acc8c41b5c4c69e30f7d13
       internalID: 7267798443319362244
       vertices: []
       indices: 
@@ -410,7 +434,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efd705839d49ee5478fffd9e947ebdee
+      spriteID: ae759a4095956c545b9719df9a0ee502
       internalID: 2922429644780520202
       vertices: []
       indices: 
@@ -431,7 +455,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b6f23e3cf925bf4f95b6e4d5b99c898
+      spriteID: dd66b349722b5bb49a2d521afbbe408f
       internalID: -4065316385973865740
       vertices: []
       indices: 
@@ -452,8 +476,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc03bf403227a5246bc3f08cc61ef8a6
+      spriteID: 3b469007dd52b6748ae619677551a8ca
       internalID: -5034208326802258431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevTile_Corner_Top_Left
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c0f6dc0ce1dc144a8c2b26497f3706
+      internalID: 7075794041156255056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevTile_Corner_Top_Right
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b43f56eb6fc2c04cbd9a7adca7ec660
+      internalID: 2337857992915618026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevTile_Corner_Bottom_Left
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0e3ade039d38046bbbe8f3b8b4b979
+      internalID: 5549301148945511166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevTile_Corner_Bottom_Right
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9b2fe484d9021459848a0067e24e44
+      internalID: 6009799177912193250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevTile_Top_Left_IC
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 37
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18de2d9263aa33d468af0b883a6172c8
+      internalID: 9163338200087120010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevTile_Top_Right_IC
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 37
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0132d243cfcd744babf310e8d71ebda
+      internalID: 7577328447866056149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevTile_Bottom_Left_IC
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 32
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f309e7a0100c046ae5f20da32687eb
+      internalID: -8902986911627330079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevTile_Bottom_Right_IC
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 32
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86383ce4c4add4a40b79699f6e759c39
+      internalID: -2644271210424804987
       vertices: []
       indices: 
       edges: []
@@ -467,9 +659,10 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 1251640089
+  userData: 1668735800
   assetBundleName: 
   assetBundleVariant: 

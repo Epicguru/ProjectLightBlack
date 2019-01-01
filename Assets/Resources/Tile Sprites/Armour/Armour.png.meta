@@ -41,6 +41,30 @@ TextureImporter:
   - first:
       213: -7978836029714126830
     second: Armour_Top_Left_I
+  - first:
+      213: -2224907989159337198
+    second: Armour_Corner_Top_Left
+  - first:
+      213: -8913246111527838957
+    second: Armour_Corner_Top_Right
+  - first:
+      213: -6524636227354956107
+    second: Armour_Corner_Bottom_Left
+  - first:
+      213: 4429074933445613809
+    second: Armour_Corner_Bottom_Right
+  - first:
+      213: 6339671610182311438
+    second: Armour_Top_Left_IC
+  - first:
+      213: 8683084967737181622
+    second: Armour_Top_Right_IC
+  - first:
+      213: -3963055866316404423
+    second: Armour_Bottom_Left_IC
+  - first:
+      213: 2643147468913502483
+    second: Armour_Bottom_Right_IC
   externalObjects: {}
   serializedVersion: 8
   mipmaps:
@@ -137,7 +161,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 294ec1cb9d631d04a86b2d99d3e73f6a
+      spriteID: a20fc9a8e0f61d74f888809f856cf8dc
       internalID: 1392869519219555330
       vertices: []
       indices: 
@@ -158,7 +182,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e0a4391c459f6f42936018b48603327
+      spriteID: 2e2eb5d54f2c803489e13a25fbdd2ed2
       internalID: -2163398137652544150
       vertices: []
       indices: 
@@ -179,7 +203,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f67a54c36372c7499022c612133abc3
+      spriteID: c2288009c9b625b4f90da7723f968bb7
       internalID: 6606184301661304005
       vertices: []
       indices: 
@@ -200,7 +224,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07e8a2d5ffe415c45831d2bbef6d80cb
+      spriteID: c20aeabf3a84d534a94bced55a0a4f06
       internalID: -8208536993758461665
       vertices: []
       indices: 
@@ -221,7 +245,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9176db85d9ff1ba4badc87410bb67188
+      spriteID: ed588c250fc69984296086d131efa652
       internalID: -8749862950533980699
       vertices: []
       indices: 
@@ -242,7 +266,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5bffaa6c797b044abee28d30dc4a8d0
+      spriteID: c076dc6543694fa449cb073ef89702bf
       internalID: -5020513083155510107
       vertices: []
       indices: 
@@ -263,7 +287,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 036a590f9616bd444b03fee1c8097960
+      spriteID: 8cef410020fb65140ad606835e931645
       internalID: -7002697560007157885
       vertices: []
       indices: 
@@ -284,7 +308,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98b8627c3b7574a4a91b3242221f4dc9
+      spriteID: ac4958c176dc61e4e9ef6185ce34f222
       internalID: -4184798703220197922
       vertices: []
       indices: 
@@ -305,7 +329,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecb503624654bc24bb8db7b5e6056b45
+      spriteID: 6ffdf0a14eb012a46b8109bb033b473c
       internalID: 8740250676347690917
       vertices: []
       indices: 
@@ -326,7 +350,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2046b8902f91d5c4aa695ae5053b2af6
+      spriteID: 1e3a3af4e79a1924985d09b8ba755435
       internalID: -8946671781800452367
       vertices: []
       indices: 
@@ -347,7 +371,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2bd914751aa94e74e9a1ec82198efd0e
+      spriteID: ae06378479b0a13429c46483d1d255af
       internalID: -933951630952547722
       vertices: []
       indices: 
@@ -368,7 +392,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49e6b2e8729199a468c4006faa2c3ad5
+      spriteID: 751835e70e6ef2b4fa62f31b72c625a2
       internalID: -1896284951951766988
       vertices: []
       indices: 
@@ -389,8 +413,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc1c51a9582105249b1a32d03d35fc63
+      spriteID: 7e51d7448fc12924b941a6100f7b77dc
       internalID: -7978836029714126830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armour_Corner_Top_Left
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90a1f5c0e5e3fc41a4600f3cc878ed1
+      internalID: -2224907989159337198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armour_Corner_Top_Right
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4344abd8fbce912449b263b5a23b2ed1
+      internalID: -8913246111527838957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armour_Corner_Bottom_Left
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a634007bd435fbe4fae4e3cb86b2c822
+      internalID: -6524636227354956107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armour_Corner_Bottom_Right
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8fa8f378495184c8a059be0aa6b4fd
+      internalID: 4429074933445613809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armour_Top_Left_IC
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 37
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365b29fbd238a4d49b473facad14186f
+      internalID: 6339671610182311438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armour_Top_Right_IC
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 37
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e62e566deb19241b568a7e0381d989
+      internalID: 8683084967737181622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armour_Bottom_Left_IC
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 32
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662ddda100588e640a0e4a27382dc6cc
+      internalID: -3963055866316404423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armour_Bottom_Right_IC
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 32
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bffaca65ddb00f4d906e1e0dff381dd
+      internalID: 2643147468913502483
       vertices: []
       indices: 
       edges: []
@@ -404,9 +596,10 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 245150699
+  userData: 1844926161
   assetBundleName: 
   assetBundleVariant: 

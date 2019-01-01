@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 22b292d214329124897d5b4ef79e13a1, type: 3}
-    totalSpriteSurfaceArea: 10000
+    totalSpriteSurfaceArea: 18392
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -55,30 +55,46 @@ SpriteAtlas:
   - {fileID: 21300000, guid: db6a2282b6438874ebd2b9c996f2a203, type: 3}
   - {fileID: -2163398137652544150, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: -4184798703220197922, guid: 2855d9680000d9846965303663841920, type: 3}
+  - {fileID: 8683084967737181622, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: -1896284951951766988, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: -8208536993758461665, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: -7002697560007157885, guid: 2855d9680000d9846965303663841920, type: 3}
+  - {fileID: 4429074933445613809, guid: 2855d9680000d9846965303663841920, type: 3}
+  - {fileID: -8913246111527838957, guid: 2855d9680000d9846965303663841920, type: 3}
+  - {fileID: -2224907989159337198, guid: 2855d9680000d9846965303663841920, type: 3}
+  - {fileID: 6339671610182311438, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: -8749862950533980699, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: -5020513083155510107, guid: 2855d9680000d9846965303663841920, type: 3}
+  - {fileID: 2643147468913502483, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: -7978836029714126830, guid: 2855d9680000d9846965303663841920, type: 3}
+  - {fileID: -6524636227354956107, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: -8946671781800452367, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: 8740250676347690917, guid: 2855d9680000d9846965303663841920, type: 3}
+  - {fileID: -3963055866316404423, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: 1392869519219555330, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: -933951630952547722, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: 6606184301661304005, guid: 2855d9680000d9846965303663841920, type: 3}
   - {fileID: 6434912615561674187, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 7075794041156255056, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 7577328447866056149, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: -9201347504828744124, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: -5034208326802258431, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: -4065316385973865740, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: 2384590612353509740, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: 2922429644780520202, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 9163338200087120010, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: -8902986911627330079, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: -682400143577139201, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 5549301148945511166, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 2337857992915618026, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: -801137815211097035, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: 6009799177912193250, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: -2159768131151346063, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: 8547274097550920225, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: 7267798443319362244, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: 8754645030478024546, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   - {fileID: 8210519884332734118, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
+  - {fileID: -2644271210424804987, guid: cb831d1be87c0d84298540afbf02f9f8, type: 3}
   m_PackedSpriteNamesToIndex:
   - Thruster Flame Sides
   - 4
@@ -89,29 +105,45 @@ SpriteAtlas:
   - Thruster
   - Armour_Left
   - Armour_Top
+  - Armour_Top_Right_IC
   - Armour_Top_Right_I
   - Armour_Bottom_Right
   - Armour_Bottom
+  - Armour_Corner_Bottom_Right
+  - Armour_Corner_Top_Right
+  - Armour_Corner_Top_Left
+  - Armour_Top_Left_IC
   - Armour_Right
   - Armour_Top_Right
+  - Armour_Bottom_Right_IC
   - Armour_Top_Left_I
+  - Armour_Corner_Bottom_Left
   - Armour_Bottom_Right_I
   - Armour_Full
+  - Armour_Bottom_Left_IC
   - Armour_Bottom_Left
   - Armour_Bottom_Left_I
   - Armour_Top_Left
   - DevTile_Full
+  - DevTile_Corner_Top_Left
+  - DevTile_Top_Right_IC
   - DevTile_Top_Right
   - DevTile_Top_Left_I
   - DevTile_Top_Right_I
   - DevTile_Top_Left
   - DevTile_Bottom_Left_I
+  - DevTile_Top_Left_IC
+  - DevTile_Bottom_Left_IC
   - DevTile_Bottom
+  - DevTile_Corner_Bottom_Left
+  - DevTile_Corner_Top_Right
   - DevTile_Right
+  - DevTile_Corner_Bottom_Right
   - DevTile_Top
   - DevTile_Left
   - DevTile_Bottom_Right_I
   - DevTile_Bottom_Left
   - DevTile_Bottom_Right
+  - DevTile_Bottom_Right_IC
   m_Tag: Tiles
   m_IsVariant: 0

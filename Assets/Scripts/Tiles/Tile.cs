@@ -13,8 +13,6 @@ public abstract class Tile : MonoBehaviour
     public byte ID;
     public string Name = "Tile Name";
 
-    public TileData Data = new TileData();
-
     public Ship Ship { get; set; }
     public int X { get; set; }
     public int Y { get; set; }
@@ -122,5 +120,27 @@ public abstract class Tile : MonoBehaviour
     public static void UnloadAllTiles()
     {
         loadedTiles.Clear();
+    }
+
+    public bool CanBeSlanted()
+    {
+        // To be slanted, a tile must have exatcly two neighbours.
+        // Also they must actually form a corner position (so they cant form a straight line).
+
+        // I'm pretty happy with how the logic is implemented here. Clean and effective. I'm patting myself on the back as I type this.
+
+        bool left = ConnectsTo(GetTileRelative(-1, 0));
+        bool right = ConnectsTo(GetTileRelative(1, 0));
+
+        if (!(left ^ right))
+            return false;
+
+        bool above = ConnectsTo(GetTileRelative(0, 1));
+        bool below = ConnectsTo(GetTileRelative(0, -1));
+
+        if (!(above ^ below))
+            return false;
+
+        return true;
     }
 }

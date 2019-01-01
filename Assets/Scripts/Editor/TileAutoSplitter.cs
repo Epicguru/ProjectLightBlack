@@ -81,6 +81,18 @@ public class TileAutoSplitter : MonoBehaviour
         metas.Add(CreateRegion(2 * EDGE + FULL, FULL, EDGE, EDGE, baseName + "Top_Right_I"));
         metas.Add(CreateRegion(3 * EDGE + FULL, FULL, EDGE, EDGE, baseName + "Top_Left_I"));
 
+        // Full tile slanted 'corners'
+        metas.Add(CreateRegion(2 * EDGE + FULL, 0, FULL, FULL, baseName + "Corner_Top_Left"));
+        metas.Add(CreateRegion(2 * EDGE + FULL * 2, 0, FULL, FULL, baseName + "Corner_Top_Right"));
+        metas.Add(CreateRegion(2 * EDGE + FULL * 3, 0, FULL, FULL, baseName + "Corner_Bottom_Left"));
+        metas.Add(CreateRegion(2 * EDGE + FULL * 4, 0, FULL, FULL, baseName + "Corner_Bottom_Right"));
+
+        // Inverted corners for use with slanted edges.
+        metas.Add(CreateRegion(4 * EDGE + FULL, EDGE + FULL, EDGE, EDGE, baseName + "Top_Left_IC"));
+        metas.Add(CreateRegion(5 * EDGE + FULL, EDGE + FULL, EDGE, EDGE, baseName + "Top_Right_IC"));
+        metas.Add(CreateRegion(4 * EDGE + FULL, FULL, EDGE, EDGE, baseName + "Bottom_Left_IC"));
+        metas.Add(CreateRegion(5 * EDGE + FULL, FULL, EDGE, EDGE, baseName + "Bottom_Right_IC"));
+
 
         importer.spritesheet = metas.ToArray();
         AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);

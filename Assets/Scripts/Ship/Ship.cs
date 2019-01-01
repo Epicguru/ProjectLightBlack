@@ -36,26 +36,68 @@ public class Ship : MonoBehaviour
         return x >= 0 && x < Width && y >= 0 && y < Height;
     }
 
-    public void SetTile(Tile prefab, int x, int y, TileData data, bool updateSurroundings = true)
+    public void SetTile(Tile prefab, int x, int y, bool updateSurroundings = true)
     {
         if (!InBounds(x, y))
             return;
 
-        Tile newTile = Instantiate(prefab);
-        newTile.X = x;
-        newTile.Y = y;
-        newTile.Ship = this;
-        newTile.transform.SetParent(this.transform);
-        newTile.transform.localPosition = new Vector3(x, y, 0f);
-        if (data != null)
-            newTile.Data = data;
-
-        tiles[x, y] = newTile;
-
-        if (updateSurroundings)
+        if(prefab != null)
         {
-            // TODO: Implement the SendSurroundingsUpdate method here.
+            if(tiles[x, y] != null)
+            {
+                var old = tiles[x, y];
+
+                Destroy(old.gameObject);
+
+                tiles[x, y] = null;
+            }
+
+
+            Tile newTile = Instantiate(prefab);
+            newTile.X = x;
+            newTile.Y = y;
+            newTile.Ship = this;
+            newTile.transform.SetParent(this.transform);
+            newTile.transform.localPosition = new Vector3(x, y, 0f);
+
+            tiles[x, y] = newTile;
+
+            if (updateSurroundings)
+            {
+                UpdateSurroundingsRadial(x, y);
+            }
+
+            SendSurroundingsUpdated(newTile, x, y, x, y);
         }
+        else
+        {
+            if(tiles[x, y] != null)
+                Destroy(tiles[x, y].gameObject);
+            tiles[x, y] = null;
+
+            if (updateSurroundings)
+            {
+                UpdateSurroundingsRadial(x, y);
+            }
+        }        
+    }
+
+    /// <summary>
+    /// Sends the SurroundingsUpdated message to all tiles around the central changed tile.
+    /// The central tile does not recieve the message.
+    /// </summary>
+    public void UpdateSurroundingsRadial(int x, int y)
+    {
+        var newTile = GetTile(x, y);
+        SendSurroundingsUpdated(newTile, x, y, x - 1, y);
+        SendSurroundingsUpdated(newTile, x, y, x - 1, y + 1);
+        SendSurroundingsUpdated(newTile, x, y, x, y + 1);
+        SendSurroundingsUpdated(newTile, x, y, x + 1, y + 1);
+        SendSurroundingsUpdated(newTile, x, y, x + 1, y);
+        SendSurroundingsUpdated(newTile, x, y, x + 1, y - 1);
+        SendSurroundingsUpdated(newTile, x, y, x, y - 1);
+        SendSurroundingsUpdated(newTile, x, y, x - 1, y - 1);
+        
     }
 
     public Tile GetTile(int x, int y)
